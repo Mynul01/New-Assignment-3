@@ -2,12 +2,16 @@ body{
     background-color: black;
     font-family: cursive;
     margin: 20px;
+    color: white;
     
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
 }
 .shop-name{
 display: flex;
@@ -19,13 +23,26 @@ justify-content: left;
     color: orangered;
     outline: 2px solid orangered;
     outline-offset: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
+    padding: 10px;
     text-shadow: white 2px 3px ;
     cursor: pointer;
+    animation-name: wafia;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-size: 50px;
 }
-.shop-name-1:hover{
-   
-}
+@keyframes wafia {
+10% {rotate: 50deg;box-shadow: red 0px 0px 50px;}
+20% {rotate: 5deg; box-shadow: blue 0px 0px 50px; }
+30% {rotate: 5deg; box-shadow: yellow 0px 0px 50px;}
+40% {rotate: 380deg; box-shadow: white 0px 0px 50px;}
+50% {rotate: -50deg; box-shadow: orangered 0px 0px 50px;}
+60% {rotate: -5deg; box-shadow: skyblue 0px 0px 50px;}
+70% {rotate: -5deg; box-shadow: darkorange 0px 0px 50px;}
+80% {rotate: -380deg; box-shadow: darkturquoise 0px 0px 50px;}
+    }
 .shop-name-2{
     color: white;
     text-shadow:orangered 2px 3px;
@@ -47,26 +64,6 @@ justify-content: left;
     text-align: center;
     justify-items: center;
     border-radius: 2px;
-    font-family: cursive;
-    transition: 0.2s;
-}
-.nev-about{
-    font-size: 20px;
-    text-align: center;
-    justify-items: center;
-    border-radius: 2px;
-    margin: 20px;
-    border: none;
-    font-family: cursive;
-    text-decoration: none;
-    color: white;
-}
-.nev-about:hover{
-    outline: 5px solid turquoise;  
-    outline-offset: 5px;
-    text-align: center;
-    justify-items: center;
-    border-radius: 5px;
     font-family: cursive;
     transition: 0.2s;
 }
@@ -110,9 +107,104 @@ justify-content: left;
     font-family: cursive;
     transition: 0.2s;
 }
+.nev-about{
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 2px;
+    margin: 20px;
+    border: none;
+    font-family: cursive;
+    text-decoration: none;
+    color: white;
+}
+.nev-about:hover{
+    outline: 5px solid turquoise;  
+    outline-offset: 5px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 5px;
+    font-family: cursive;
+    transition: 0.2s;
+}
+.nev-shop{
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 2px;
+    margin: 20px;
+    border: none;
+    font-family: cursive;
+    text-decoration: none;
+    color: white;
+}
+.nev-shop:hover{
+    outline: 5px solid turquoise;  
+    outline-offset: 5px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 5px;
+    font-family: cursive;
+    transition: 0.2s;
+}
 .nev-bar{
-    word-spacing: 10px;
+justify-content: space-between;
 }
 .btn-login{
-    
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.btn-login:hover{
+  box-shadow: white 0px 0px 15px;
+}
+.marquee{
+    color: white;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    font-size: 25px;
+    border-right: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    padding: 1.5px;
+    font-family: cursive;
+    font-weight: bold;
+
+}
+.flex-1{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.product-1{
+    height: 220px;
+    width: 280px;
+    border-radius: 10px;
+}
+.card{
+background-color: gray;
+padding: 10px;
+border-radius: 10px;
+}
+.card-header{
+    text-align: center;
 }
